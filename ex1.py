@@ -28,6 +28,3 @@ else:
 get_ent = (get_apart - 1) // apartments_in_ent + 1
 get_floor = (get_apart - 1) % apartments_in_ent // amount_of_apart_in_floor + 1
 print(f"Квартира {get_apart} находится в(о) {get_ent} подъезде и на {get_floor} этаже")
-
-# format() str format method python
-# percent formatting method
