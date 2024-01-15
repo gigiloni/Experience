@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="training with CSS">
+    <meta http-equiv="refresh" content="30">
+    <title>testsite.org/contact.org</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="bird1.jpg">
+<body>
+    <header>
+        <h1 class="styleHeader">CSS starting...</h1>
+    </header>
+    <nav class="clearfix flex-box">
+        <div class="nav col-12 col-s-12">
+            <a href="index.html">Home</a>
+            <a href="about.htm">About Us</a>
+            <a href="forum.htm">Our Forum</a>
+            <a href="contact.htm">Contact Us</a>
+        </div>
+    </nav>
+    <section class="clearfix">
+        <div class="box side col-6 col-s-12">
+            <button type="button" onclick="getBook()">Get a list of books!</button>
+            <p id="book"></p>
+            <script>
+                const myBooks = [
+                    {name: "A", price: 100 },
+                    {name: "B", price: 120 },
+                    {name: "C", price: 140 },
+                    {name: "D", price: 160 },
+                    {name: "I", price: 150 },
+                    {name: "F", price: 120 },
+                    {name: "G", price: 100 },
+                    {name: "J", price: 110 },
+                    {name: "K", price: 230 },
+                    {name: "L", price: 200 },
+                    {name: "M", price: 170 }
+                ];
+
+                myBooks.sort( (p1, p2) => {
+                    if(p1.price < p2.price) return -1;
+                    if(p1.price > p2.price) return 1; // sorting by price
+                    return 0;
+                });
+
+                let text_books = "";
+                myBooks.forEach(book);
+                function book(value) {
+                    text_books += value.name + " " + value.price + "<br/>";
+                }
+                function getBook() {
+                document.getElementById("book").innerHTML = text_books;
+                }
+            </script>
+        </div>
+        
+    </section>
+    <footer>
+        <ul class="footer">
+            <li>Telephone number: +49 176 222 22222</li>
+            <li>E-mail: css.training@gmail.com</li>
+            <li onclick="reportError()">Report Error</li>
+            <script>
+                function reportError() {
+                    alert('Sorry, this function is not availible right now');
+                }
+            </script>
+        </ul>
+    </footer>
+    
+</body>
+</html>
