@@ -1,0 +1,20 @@
+[
+    {
+        "_Person__name": [
+            "George",
+            "Arrow"
+        ],
+        "_Person__age": 18,
+        "_Person__ps": "1111 222222",
+        "_Person__weight": 61.2
+    },
+    {
+        "_Person__name": [
+            "Alice",
+            "Smith"
+        ],
+        "_Person__age": 21,
+        "_Person__ps": "2222 222222",
+        "_Person__weight": 52.1
+    }
+]
