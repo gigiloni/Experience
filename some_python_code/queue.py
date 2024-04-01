@@ -33,7 +33,7 @@ class Background:
 
 
 bg = Background()
-bg.add('job1')  # just example, if u wanna use this queue u would delete these "adds"
-bg.add('job2')  # just example, if u wanna use this queue u would delete these "adds"
-bg.add('job3')  # just example, if u wanna use this queue u would delete these "adds"
+bg.add('job1')  # just example, if u wanna use this queue u should delete these "adds"
+bg.add('job2')  # just example, if u wanna use this queue u should delete these "adds"
+bg.add('job3')  # just example, if u wanna use this queue u should delete these "adds"
 bg.execute()
