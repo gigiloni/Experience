@@ -123,10 +123,24 @@ s2_answers = {
     '9 ex': 'd',
     '10 ex': 'iteration'
 }
+s4_answers = {
+    '1 ex': 'a',
+    '2 ex': 'c',
+    '3 ex': 'a',
+    '4 ex': 'b',
+    '5 ex': 'd',
+    '6 ex': 'b',
+    '7 ex': 'c',
+    '8 ex': 'a',
+    '9 ex': 'a',
+    '10 ex': 'd',
+    '11 ex': 'Left'
+}
 
 s1 = Verify(right_answers=r_answers, answers=s1_answers, test_name='Alice Smith')
 s2 = Verify(right_answers=r_answers, answers=s2_answers, test_name='George Soul')
 s3 = Test1(r1_answers, s3_answers, 'Claus Wrong')
+s4 = Test2(r2_answers, s4_answers, 'Stephan Just')
 print(s1)
 print(s2)
 print(s3)
