@@ -90,7 +90,7 @@ class Person:
         self.__weight = weight
 
 
-p1 = Person(name='George Arrow', age=18, ps='1111 222222', weight=61.2)
+p1 = Person(name='George Arrow', age=19, ps='1111 222222', weight=61.2)
 p2 = Person(name='Alice Smith', age=21, ps='2222 222222', weight=52.1)
 
 data = p1.__dict__, p2.__dict__
